@@ -1,0 +1,166 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact</title>
+		<link rel="stylesheet" href="../layout.css" type="text/css" />
+		<script type="text/javascript" src="contact.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="navbar">
+			<a href="../index.html" style="float: left">
+				<img src="../Images/logo.png" alt="logo" title="Home" />
+			</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<div class="dropdown">
+				<button class="dropbtn">&#9660;Images</button>
+				<div class="dropdown-content">
+					<a href="images.html#2000">2000-2005</a>
+					<a href="images.html#2005">2005-2010</a>
+					<a href="images.html#2010">2010-2015</a>
+					<a href="images.html#2015">2015-2020</a>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div style="background-color: gray">
+			<br />
+			<div id="submitError"></div>
+			<form
+				method="POST"
+				action="#"
+				name="submit"
+				onsubmit="return validateForm()"
+				class="submit"
+			>
+				<fieldset>
+					<table width="500px">
+						<tr>
+							<td>Send a message</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" name="name" size="15" placeholder="Name" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input
+									type="email"
+									name="email"
+									size="15"
+									placeholder="Email"
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<textarea
+									id="TextArea"
+									rows="10"
+									cols="60"
+									name="message"
+									placeholder="Message"
+								></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Send Anonymously<input
+									id="checks"
+									type="radio"
+									name="anon"
+									value="anonyes"
+									style="height: auto"
+								/>
+								Include Email<input
+									id="checks"
+									type="radio"
+									name="anon"
+									value="anonno"
+									style="height: auto"
+									checked="checked"
+								/><br />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Subscribe to newsletter<input
+									id="checks"
+									type="checkbox"
+									name="subscribe"
+									value="subscribe"
+									style="height: auto"
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="submit" name="submit" value="Submit" />
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset>
+					<table class="social">
+						<tr>
+							<td width="300px">Get in touch</td>
+						</tr>
+						<tr>
+							<td width="300px">
+								<a href="https://www.facebook.com/" target="_blank"
+									><img src="../Images/facebook.png" alt="Facebook"
+								/></a>
+								<a href="https://www.twitter.com/" target="_blank"
+									><img src="../Images/twitter.png" alt="Twitter"
+								/></a>
+								<a href="https://www.instagram.com/" target="_blank"
+									><img src="../Images/instagram.png" alt="Instagram"
+								/></a>
+								<a
+									href="mailto:77riteshrajbhandari77@gmail.com?subject=Final Assignment"
+									target="popup"
+									onclick="window.open('mailto:77riteshrajbhandari77@gmail.com?subject=Final Assignment','popup','width=600,height=600'); return false;"
+									><img src="../Images/gmail.png" alt="Gmail"
+								/></a>
+								<a href="https://www.youtube.com/" target="_blank"
+									><img src="../Images/youtube.png" alt="YouTube"
+								/></a>
+								<a
+									href="https://wa.me/12345678901234567890?text="
+									target="_blank"
+								>
+									<img src="../Images/whatsapp.png" alt="WhatsApp" />
+								</a>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+		</div>
+		<div class="footer">
+			<div>
+				wdffdserrew <br />
+				gfdsfds<br />
+				gbvfcdgfdyt<br />
+				uytrejhgfv
+			</div>
+			<div>
+				wdffdserrew <br />
+				gfdsfds<br />
+				gbvfcdgfdyt<br />
+				uytrejhgfv
+			</div>
+
+			<div id="end">
+				<a href="instagram.com"><img src="" /></a>
+				adsfghjkujyhtgrfe asdfghjkjhgfdsadfghjkh gfdsadfghjkhgfdsa
+			</div>
+		</div>
+	</body>
+</html>

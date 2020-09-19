@@ -1,0 +1,225 @@
+html {
+	scroll-behavior: smooth;
+	transition: ease;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	background: #222222;
+}
+::-webkit-scrollbar-thumb {
+	background: #666666;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #999999;
+}
+::-webkit-scrollbar-thumb:active {
+	background: #dddddd;
+}
+
+body {
+	max-width: 1140px;
+	margin: auto;
+	background-color: black;
+	font-size: 22px;
+	color: white;
+	font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+	background-color: #333;
+	position: fixed;
+	width: 1140px;
+	margin: 0;
+	top: 0;
+	z-index: +1;
+	display: block;
+	transition: top 0.3s;
+}
+
+.navbar a {
+	float: right;
+	display: block;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.dropdown {
+	float: right;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+	background-color: red;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.navbar a img {
+	display: block;
+	overflow: hidden;
+	max-height: 19px;
+}
+
+#banner {
+	background-color: black;
+	position: relative;
+}
+
+#banner > img {
+	padding: 0%;
+	height: 630px;
+	width: 1140px;
+	object-fit: cover;
+	opacity: 0.6;
+}
+
+.text-block1 {
+	position: absolute;
+	top: 40%;
+	left: 100px;
+	background-color: transparent;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.text-block1 h1 {
+	font-size: 75pt;
+}
+.text-block2 {
+	position: absolute;
+	top: 45%;
+	right: 100px;
+	width: 200px;
+	background-color: transparent;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.center a {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 0;
+}
+#box {
+	position: relative;
+	display: inline-block;
+	margin-left: 4%;
+	margin-top: 4%;
+	width: 20%;
+	background-color: rgb(185, 185, 185);
+	box-shadow: 8px 8px 3px 1px rgb(90, 90, 90);
+	color: black;
+	padding: 40px;
+	outline: 7px double rgb(224, 224, 224);
+	outline-offset: -20px;
+}
+
+.sidebar {
+	position: fixed;
+	width: 20%;
+	margin: 60px 20px;
+	display: block;
+	transition: top 0.3s;
+	display: block;
+}
+.sidebar a {
+	text-decoration: none;
+	color: black;
+}
+.sidebar a::before {
+	content: "\A";
+	white-space: pre;
+}
+#images > div > a > #first {
+	margin-left: 75px;
+}
+
+#images img {
+	height: 500px;
+	width: 500px;
+	object-fit: cover;
+	margin: 10px;
+}
+.footer {
+	font-size: 11pt;
+	border-top-color: black;
+	border-top-width: 3px;
+	border-top-style: solid;
+	background-color: rgb(49, 49, 49);
+	padding: 30px 20px;
+	height: 150px;
+}
+.footer div {
+	display: inline-block;
+	margin-right: 35px;
+	margin-left: 35px;
+	line-height: 25px;
+}
+#end {
+	padding: 0px 0px;
+	display: block;
+	text-align: right;
+	margin: 0px 0px;
+	margin-top: 40px;
+}
+.social tr td a img {
+	width: 40px;
+	height: auto;
+}
+.submit fieldset table tr td input,
+.submit fieldset table tr td input textarea {
+	width: 500px;
+	text-align: center;
+	height: 40px;
+	background-color: rgb(224, 224, 224);
+	box-shadow: none;
+}
+#checks {
+	width: auto;
+	height: auto;
+}
+/* @media screen and (min-width: 1140px){}
+@media screen and (max-width: 1140px){} */
