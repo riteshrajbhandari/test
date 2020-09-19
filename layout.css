@@ -105,6 +105,7 @@ body {
 #banner {
 	background-color: black;
 	position: relative;
+	height: 630px;
 }
 
 #banner > img {
@@ -113,6 +114,29 @@ body {
 	width: 1140px;
 	object-fit: cover;
 	opacity: 0.6;
+}
+
+.slide > #banner > img {
+	animation: fade 5s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0.15;
+	}
+	10% {
+		opacity: 0.35;
+	}
+	50% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 0.35;
+	}
+	100% {
+		opacity: 0.15;
+	}
 }
 
 .text-block1 {
@@ -178,11 +202,12 @@ body {
 }
 
 #images img {
-	height: 500px;
-	width: 500px;
+	height: 460px;
+	width: 460px;
 	object-fit: cover;
-	margin: 10px;
+	margin: 10px 30px;
 }
+
 .footer {
 	font-size: 11pt;
 	border-top-color: black;
@@ -198,6 +223,10 @@ body {
 	margin-left: 35px;
 	line-height: 25px;
 }
+.footer a {
+	text-decoration: none;
+	color: white;
+}
 #end {
 	padding: 0px 0px;
 	display: block;
@@ -208,6 +237,12 @@ body {
 .social tr td a img {
 	width: 40px;
 	height: auto;
+}
+.submit fieldset {
+	border: none;
+}
+.submit fieldset table tr td {
+	color: black;
 }
 .submit fieldset table tr td input,
 .submit fieldset table tr td input textarea {
@@ -221,5 +256,44 @@ body {
 	width: auto;
 	height: auto;
 }
+/* 
+.btn {
+	padding: 15px 45px;
+	background-color: #999999;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.quiz-box .question-text {
+	line-height: 28px;
+	padding: 20px 0px;
+	margin: 0;
+}
+
+.quiz-box .option-container {
+}
+
+.quiz-box .option-container .option {
+	background-color: #636363;
+	padding: 15px;
+	line-height: 22px;
+	cursor: pointer;
+}
+
+.quiz-box .btn {
+	margin: 15px 0;
+}
+.quiz-box .answers-indicator {
+	border-top: 1px solid #cccccc;
+}
+.quiz-box .answers-indicator div {
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	background-color: #999999;
+	margin-right: 3px;
+} */
+
 /* @media screen and (min-width: 1140px){}
 @media screen and (max-width: 1140px){} */
